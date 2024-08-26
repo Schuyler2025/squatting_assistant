@@ -1,0 +1,43 @@
+allprojects {
+    repositories {
+        maven {
+            allowInsecureProtocol = true
+            url 'https://mirrors.cloud.tencent.com/gradle/'
+        }
+        maven {
+            allowInsecureProtocol = true
+            url 'https://mirrors.cloud.tencent.com/nexus/repository/maven-public/'
+        }
+        maven {
+            allowInsecureProtocol = true
+            url 'https://maven.aliyun.com/repository/gradle-plugin/'
+        }
+        maven { allowInsecureProtocol = true
+                url 'https://maven.aliyun.com/repository/nexus/content/repository/jcenter'
+        }
+
+        maven {
+            allowInsecureProtocol = true
+            url 'https://maven.aliyun.com/repository/jcenter'
+        }
+
+        maven {
+            allowInsecureProtocol = true
+            url 'http://maven.aliyun.com/nexus/content/groups/public'
+        }
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.buildDir = "../build"
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(":app")
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
