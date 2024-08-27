@@ -77,10 +77,7 @@ flutter:
   fonts:
     - family: Outfit
       fonts:
-        - asset: assets/fonts/Outfit-Regular.ttf
         - asset: assets/fonts/Outfit-Bold.ttf
-        - asset: assets/fonts/Outfit-Medium.ttf
-        - asset: assets/fonts/Outfit-Thin.ttf
           # style: italic
     - family: Lato
       fonts:

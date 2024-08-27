@@ -7,7 +7,7 @@ class CounterCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: Color.fromARGB(255, 157, 189, 255),
+      color: const Color.fromARGB(255, 157, 189, 255),
       child: Row(children: [
         Expanded(
           child: SizedBox(

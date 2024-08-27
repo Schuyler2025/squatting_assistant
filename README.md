@@ -18,11 +18,11 @@ Squat Assistant is an open-source mobile application developed using Flutter. Th
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/squat-assistant.git
+    git clone https://github.com/yourusername/squatting_assistant.git
     ```
 2. Navigate to the project directory:
     ```bash
-    cd squat-assistant
+    cd squatting_assistant
     ```
 3. Install dependencies:
     ```bash

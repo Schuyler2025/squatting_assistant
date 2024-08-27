@@ -18,7 +18,6 @@ class App extends StatelessWidget {
               fontFamily: 'Outfit-Bold',
               fontSize: 32,
               fontWeight: FontWeight.w700,
-              // color: Color.fromARGB(255, 54, 186, 152)
               ),
           titleMedium: TextStyle(
             fontFamily: 'Outfit-Bold',
@@ -37,7 +36,7 @@ class App extends StatelessWidget {
           backgroundColor: const Color.fromARGB(255,233, 196, 106),
           elevation: 0,
         ),
-        body: const HomePage(),
+        body: const SafeArea(child:  HomePage()),
       ),
     );
   }
