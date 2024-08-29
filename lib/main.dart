@@ -1,18 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:squatting_assistant/app.dart';
-import 'package:squatting_assistant/home_page.dart';
-import 'package:squatting_assistant/schedule_page.dart';
+import 'package:provider/provider.dart';
+import 'package:squatting_assistant/widgets/app.dart';
 
-// void main() {
-//   runApp(MaterialApp(
-//     initialRoute: '/',
-//     routes: {
-//       '/':(context) => HomePage(),
-//       '/schedule':(context)=>SchedulePage(),
-//     },
-//   ));
-// }
+import 'package:squatting_assistant/models/training_plan_model.dart';
+
+
 
 void main() {
-  runApp(const App());
+  runApp(
+      ChangeNotifierProvider(create: (_) => TrainingPlanModel(), child: App()));
 }

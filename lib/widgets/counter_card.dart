@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:squatting_assistant/circle_widget.dart';
+import 'package:provider/provider.dart';
+import 'package:squatting_assistant/widgets/circle_widget.dart';
+import 'package:squatting_assistant/models/training_plan_model.dart';
 
 class CounterCard extends StatelessWidget {
   const CounterCard({super.key});
@@ -22,7 +24,7 @@ class CounterCard extends StatelessWidget {
                 subtitle: Text.rich(
                     const TextSpan(
                         text:
-                            'One cannot always be a hero, \nbut one can always be a man.'),
+                            'One cannot always be a hero, but one can always be a man.'),
                     style: Theme.of(context).textTheme.bodyMedium),
               ),
             ),
@@ -32,7 +34,8 @@ class CounterCard extends StatelessWidget {
           padding: const EdgeInsets.only(right: 20),
           child: CircleWidget(
             child: Text(
-              '100',
+              '${Provider.of<TrainingPlanModel>(context).squats}',
+
               style: Theme.of(context).textTheme.titleMedium!.copyWith(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,

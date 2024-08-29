@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:squatting_assistant/home_page.dart';
+import 'package:squatting_assistant/pages/home_page.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -7,6 +7,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
             seedColor: const Color.fromARGB(255, 54, 186, 152),

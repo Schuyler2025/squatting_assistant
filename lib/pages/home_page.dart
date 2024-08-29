@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:squatting_assistant/counter_card.dart';
-import 'package:squatting_assistant/outfit_title.dart';
-import 'package:squatting_assistant/tools_table.dart';
+import 'package:squatting_assistant/widgets/counter_card.dart';
+import 'package:squatting_assistant/widgets/outfit_title.dart';
+import 'package:squatting_assistant/widgets/tools_table.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -31,7 +31,7 @@ class HomePage extends StatelessWidget {
                 textStyle: Theme.of(context).textTheme.titleMedium!),
           ),
           const SizedBox(height: 20),
-          const ToolsTable(),
+           ToolsTable(),
         ],
       ),
     );
