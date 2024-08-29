@@ -14,31 +14,6 @@ Squat Assistant is an open-source mobile application developed using Flutter. Th
   - **Vague Counting** 🌫️: A more lenient detection mode for squats.
 - **Pause/Resume Counting** ⏸️▶️: Easily pause and resume your workout sessions as needed.
 
-## Installation ⚙️
-
-1. Clone the repository:
-   
-   ```bash
-   git clone git@github.com:Schuyler2025/squatting_assistant.git
-   ```
-
-2. Navigate to the project directory:
-   
-   ```bash
-   cd squatting_assistant
-   ```
-
-3. Install dependencies:
-   
-   ```bash
-   flutter pub get
-   ```
-
-4. Run the app:
-   
-   ```bash
-   flutter run
-   ```
 
 ## Usage 🏃‍♂️
 
