@@ -1,7 +1,7 @@
 <p align="center">
   <img src="./Logo.jpg" alt="Anx-logo" width="100" />
 </p>
-<h1 align="center">Squat Assistant(深蹲助手)</h1>
+<h1 align="center">Squat Assistant</h1>
 
 Squat Assistant is an open-source mobile application developed using Flutter. This app is designed to help users track their squat exercises efficiently. Of course, you can also cheat to comfort yourself.
 
